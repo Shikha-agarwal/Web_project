@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Document
+    </title>
+    <style>
+        .nav{
+            display: inline;
+        }
+
+        .items{
+            list-style-type:none;
+            text-align: right;
+            margin-right: 10px;
+            word-spacing: 15px;
+            margin-top: -10px;
+        }
+
+        .item{
+            display:inline ;
+            color: chocolate;
+        }
+
+        body{
+            background-image: url("ss.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        a{
+            color: black;
+            text-shadow: crimson;
+            text-transform: capitalize;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        .Loginform{
+            text-align: center;
+            margin-top: 150px;
+            padding: 0;
+        }
+
+        .box{
+            position: absolute;
+            box-shadow:#ffff;
+            opacity: 2;
+            border: 3px solid black;
+            background-color:white;
+            margin-left:640px;
+            margin-top: -50px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        button{
+            border-radius: 30px;
+            border: 2px solid black;
+            background-color:lightblue; }
+
+        button:hover { background-color: blue; color:white }
+
+        h1{
+            text-align: center;
+            margin-top: 40px;
+            text-shadow: black;
+            background-color:white;
+            border:2px solid black;
+            outline : thick ridge lightblue;
+        }
+
+        p{
+            text-align: left;
+            color: black;
+        }
+
+        :placeholder-shown{
+            border-radius: 40px;
+        }
+    </style>
+</head>
+<body>
+<h1>STATUS INFOTAINMENT</h1>
+<div class="nav">
+    <ul class="items">
+        <li class="item"><a href='#'><strong>Home</strong></a></li>
+        <li class="item"><a href='#'><Strong>About</Strong></a></li>
+        <li class="item"><a href='#'><Strong>Service</Strong></a></li>
+        <li class="item"><a href='#'><Strong>ContactUs</Strong></a></li>
+    </ul>
+</div>
+<div class="Loginform">
+    <div class="box">
+        <p><strong>Email</strong>
+        <form action="validate.php" method="post">
+            <label>
+                <input type="email" name="user" placeholder="Email" required/>
+            </label>
+            <p><strong>Password</strong><br>
+                <label>
+                    <input type="password" name="password" placeholder="Password" required/>
+                </label><br>
+            <div class="first">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

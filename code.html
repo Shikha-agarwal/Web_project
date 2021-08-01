@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h5{
+            color: blue;
+            text-align: right;
+            margin-right: 100px;
+        }
+        h2{
+            margin-top: 5px;
+            color:black;
+            text-align: center;
+        }
+        label { font-weight: bold }
+        select{
+            text-align: right;
+
+        }
+        body{
+            background-image: url(im.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .aws{
+            text-align:left;
+        }
+        textarea{ margin-left:400px; }
+        input { background-color: lightgreen; color:black; }
+        input:hover {background-color:green; color: Yellow;}
+
+    </style>
+</head>
+<body>
+<form action="lastpg.php" method="post">
+    <div class="aws">
+        <br>
+        <label for="Language">Select a language:</label>
+        <select id="Language" name="sellang" required>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+        </select>
+    </div>
+    <label>
+        <textarea name="codewritten" rows="26" cols="70" placeholder="Write your code here" required></textarea>
+    </label>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>

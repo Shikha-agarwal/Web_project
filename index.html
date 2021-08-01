@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Home | STATUS INFOTAINMENT </title>
+    <style>
+        .container {
+            display:flex;
+            justify-content: center;
+        }
+
+        .signupform {
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 16px;
+            background-color: white;
+            margin: 10px 10px 10px 565px;
+        }
+
+        .signupform {
+            max-width: 200px;
+        }
+
+        .inputbox {
+            max-height:30px;
+            max-length: 100px;
+            border-radius: 4px;
+        }
+
+        input:hover {
+            background-color: lightgray;
+        }
+
+        h1 {
+
+            background-color: khaki;
+            height: 50px;
+            padding: 12px;
+            margin:7px;
+        }
+
+        hr {
+            border: 4px solid black;
+        }
+
+        div {
+            background-color: gainsboro;
+            font-weight: bold;
+        }
+
+        #image {
+            background-image: url("https://illuminatingdiscovery.wisc.edu/wp-content/uploads/2019/04/EmergingTechnologies.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 555px;
+        }
+
+        input[type*="submit"] {
+            background-color: lightgreen;
+            border-radius: 50px;
+        }
+
+        input[type*="submit"]:hover {
+            background-color: green;
+        }
+
+
+    </style>
+</head>
+<body>
+<div style="text-align: center;">
+    <div>
+        <div class="container">
+            <img src="https://static.thenounproject.com/png/965231-200.png" alt="logo" height="80px">
+            <h1> STATUS INFOTAINMENT </h1>
+        </div>
+        <a href="login.html"> Login </a>
+        <hr>
+    </div>
+    <div id="image">
+        <br><br>
+        <h3 style="color: darkgrey"> Sign up </h3>
+        <form action="stored.php"  method="post" class="signupform" onsubmit="return validate(this)">
+
+            <label>
+                <input type="text" name="name" class="inputbox" placeholder="Name" required>
+            </label>
+            <br><br>
+            <label>
+                <input type="email"  name="mail" class="inputbox" placeholder="Email" required>
+            </label>
+            <br><br>
+            <label>
+                <input type="password"  name="pass" class="inputbox"  placeholder="Password" required>
+            </label>
+            <br><br>
+            <label>
+            <input type="password" name="retypepass" class="inputbox"  placeholder="Confirm Password" required>
+            </label>
+            <br><br>
+
+            <script>
+                function validate(form) {
+                    let x = form.pass.value;
+                    let y= form.retypepass.value;
+                    if(x!==y) {alert ("\nPassword did not match: Please try again...")
+                        return false;}
+                    else  { return true ; }
+                }
+            </script>
+
+            <label>
+                <input type="text"  name="qualification" class="inputbox" placeholder="Highest Qualification" required>
+            </label>
+            <br><br>
+            <label>
+                <input type="tel" name="mobileno" class="inputbox" placeholder="Mobile No."  pattern="^\d{10}$"  required>
+            </label>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+    </div>
+</body>
+</html>
+

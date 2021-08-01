@@ -1,0 +1,1 @@
+Write a Program to Read a Number n And Print the Series "1+2+…..+n= ".

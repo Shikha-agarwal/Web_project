@@ -1,0 +1,1 @@
+Write a Program to Accept Three Digits and Print all Possible Combinations from the Digits.
